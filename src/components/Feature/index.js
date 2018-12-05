@@ -24,9 +24,7 @@ export default class Feature extends Component {
 		return (
 			<Fragment>
 				<AppBar />	
-				<LandingImage>
-						BOO
-				</LandingImage>
+				<LandingImage />
 				<Container>
 					<Formats padding={style.padding} height={style.height.lg}/>
 				</Container>
