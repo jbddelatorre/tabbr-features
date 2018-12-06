@@ -20,7 +20,7 @@ const style = {
 	},
 	card: {
 		borderRadius:'10px',
-		boxShadow:'1px 10px 20px 1px',
+		boxShadow:'1px 10px 50px 1px #aaa',
 		color:'#3C4858'
 	},
 	offset: {
