@@ -10,8 +10,7 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem,
-  Container } from 'reactstrap';
+  DropdownItem } from 'reactstrap';
 import '../../../animate/animate.css'
 
 const style = {
@@ -65,7 +64,7 @@ export default class Example extends React.Component {
   }
 
   handleScroll = (e) => {
-    const scrollable = document.body.scrollHeight - window.innerHeight
+    // const scrollable = document.body.scrollHeight - window.innerHeight
     const y = window.scrollY
     // const bool = 100*y/scrollable < 20 ? true : false;
     const bool = y < 500 ? true : false;

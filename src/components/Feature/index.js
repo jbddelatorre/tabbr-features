@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from 'react';
 import AppBar from './Appbar';
-import { Container, Row, Col } from 'reactstrap';
 
 import LandingImage from './Landing';
 import Formats from './Formats';

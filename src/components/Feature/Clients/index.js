@@ -11,20 +11,22 @@ import XDC from '../../../images/clients/xdc.jpg'
 export default () => {
 	return (
 		<section>
-			<Col className="text-center description"xs="12">
-				Debate Tournaments
-			</Col>
-			<Col xs="12 py-4">
-				<ClientCarousel 
-					images={[
-						[CSB, 'CSB Debate Society'],
-						[ADS, 'Ateneo Debate Society'],
-						[UPDS, 'UP-Diliman Debate Society'],
-						[EDS, 'Eugenio Debate Society'],
-						[XDC, 'Xavier Debate Society'],
-					]}
-				/>
-			</Col>
+			<Row>
+				<Col className="text-center description"xs="12">
+					Debate Tournaments
+				</Col>
+				<Col xs="12 py-4">
+					<ClientCarousel 
+						images={[
+							[CSB, 'CSB Debate Society'],
+							[ADS, 'Ateneo Debate Society'],
+							[UPDS, 'UP-Diliman Debate Society'],
+							[EDS, 'Eugenio Debate Society'],
+							[XDC, 'Xavier Debate Society'],
+						]}
+					/>
+				</Col>
+			</Row>
 		</section>
 	)
 };

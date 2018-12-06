@@ -20,6 +20,7 @@ export default (props) => {
 					style={style.image}
 					className="rounded"
 					src={props.image}
+					alt={'Feature Image'}
 					>
 				</img>
 			</Col>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Radium from 'radium';
 import Background from '../../../images/bg.jpg'
-import { Container, Row, Col, Button } from 'reactstrap';
+import { Row, Col, Button } from 'reactstrap';
 
 const style = {
 	background: {
