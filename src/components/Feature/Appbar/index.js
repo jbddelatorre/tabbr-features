@@ -67,7 +67,6 @@ export default class Example extends React.Component {
   handleScroll = (e) => {
     const scrollable = document.body.scrollHeight - window.innerHeight
     const y = window.scrollY
-    console.log(y)
     // const bool = 100*y/scrollable < 20 ? true : false;
     const bool = y < 500 ? true : false;
 
@@ -77,7 +76,6 @@ export default class Example extends React.Component {
   }
 
   render() {
-    console.log(this.state.top)
     return (
       <div 
         className="fixed-top" 

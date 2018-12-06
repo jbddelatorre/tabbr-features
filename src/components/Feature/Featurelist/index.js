@@ -21,7 +21,7 @@ export default class Featurelist extends Component {
 		return (
 			<section className="p-2" style={style.section}>
 				<Row>
-					<Col className="text-center description" xs="12">
+					<Col className="text-center description my-4" xs="12">
 						Features
 					</Col>
 					<Col xs="12">

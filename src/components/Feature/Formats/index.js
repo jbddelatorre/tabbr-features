@@ -5,7 +5,7 @@ export default (props) => {
 	return (
 		<section style={{...props.padding, ...props.height}}>
 			<Row>
-				<Col xs="12" className="text-center description">
+				<Col xs="12" className="text-center description my-4">
 					Formats Available
 				</Col>
 			</Row>
