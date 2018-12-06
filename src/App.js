@@ -4,7 +4,7 @@ import Features from './components/Feature';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="App" style={{backgroundColor:'#efefef'}}>
         <Features />
       </div>
     );

@@ -1,20 +1,22 @@
 import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col, Button} from 'reactstrap';
 
 export default (props) => {
 	return (
 		<section style={{...props.padding, ...props.height}}>
 			<Row>
-				<Col xs="12">
-					<h2>Formats Available</h2>
+				<Col xs="12" className="text-center description">
+					Formats Available
 				</Col>
 			</Row>
 			<Row>
-				<Col xs="12" md="6">
-					<h2>AP</h2>
+				<Col className="text-center" xs="12" md="6">
+					<h2>Asian Parliament Image</h2>
+					<Button className="mr-2" outline color="danger">Learn More</Button>
 				</Col>
-				<Col xs="12" md="6">
-					<h2>BP</h2>
+				<Col className="text-center" xs="12" md="6">
+					<h2>British Parliament Image</h2>
+					<Button className="mr-2" outline color="danger">Learn More</Button>
 				</Col>
 			</Row>
 		</section>
