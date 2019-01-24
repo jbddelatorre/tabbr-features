@@ -5,11 +5,11 @@ import LandingImage from './Landing';
 import Formats from './Formats';
 import Featurelist from './Featurelist'
 import Clients from './Clients'
-// import Testimonials from './Testimonials'
 import Subbar from './Subbar'
 import Contact from './Contact'
-import Usercount from './Usercount'
 import Footer from './Footer'
+// import Testimonials from './Testimonials'
+// import Usercount from './Usercount'
 
 
 const style = {
@@ -34,7 +34,7 @@ const style = {
 		lg: {
 			height:'40vh'
 		}
-	}
+	},
 }
 
 export default class Feature extends Component {
@@ -48,7 +48,7 @@ export default class Feature extends Component {
 						<Subbar />
 						<Formats padding={style.padding} height={style.height.lg}/>
 						<Featurelist />
-						<Usercount />
+						{/*<Usercount />*/}
 						<Clients />
 						<Contact />
 						<Footer />	

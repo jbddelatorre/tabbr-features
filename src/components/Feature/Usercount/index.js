@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import Odometer from 'react-odometerjs';
-import 'odometer/themes/odometer-theme-default.css'
+import 'odometer/themes/odometer-theme-minimal.css'
 // import 'odometer/themes/odometer-theme-car.css'
 
 const style = {

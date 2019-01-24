@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import Background from '../../../images/contact.jpg'
 import { Container, Row, Col, Button } from 'reactstrap'; 
 
+import TransBg from '../../UI/TransparentBackground'
 
 const style = {
 	bg: {
 		backgroundImage: `url(${Background})`,
 		backgroundSize:'cover',
-		position:'relative',
-		minHeight:'60vh'
+		
+		minHeight:'60vh',
 	},
 	darkBg: {
 		backgroundColor:'black',
@@ -20,11 +21,8 @@ const style = {
 		zIndex:'1'
 	},
 	content: {
-		position:'absolute',
-		top:'0',
 		minHeight:'60vh',
 		width:'100%',
-		zIndex:'99',
 		color:'white'
 	},
 	card: {
@@ -34,19 +32,18 @@ const style = {
 }
 
 export default class index extends Component {
+
 	render() {
 		return (
-			<section style={style.bg}>
-				<div style={style.darkBg}></div>
+			<TransBg bgimage={Background}>
 				<div style={style.content}>
 					<Container>
 						<Row style={{minHeight:'60vh'}}>
-							<Col className="text-center my-auto" xs="6">
+							<Col className="text-center my-auto" xs="12" md="5">
 								<h3>Like what you see?</h3>
-								<h1>Tabbr</h1>
-								<p>We'd like to hear from you</p>
+								<p>Tabbr would like to hear from you!</p>
 							</Col>
-							<Col className="text-center my-auto" xs="6">
+							<Col className="text-center my-auto" xs="12" md="7">
 								<div className="card" style={style.card}>
 									<div className="card-body">
 										<div className="form-group">
@@ -70,8 +67,7 @@ export default class index extends Component {
 						</Row>
 					</Container>
 				</div>
-			</section>
-
+			</TransBg>	
 		);
 	}
 }

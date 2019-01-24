@@ -3,8 +3,6 @@ import { Row, Col } from 'reactstrap';
 
 const style={
 	image: {
-		width: '893px',
-		height: '378px',
 		boxShadow: '1px 1px 50px 2px #ccc'
 	},
 	hr: {
@@ -18,16 +16,18 @@ export default (props) => {
 			<Col className="text-center" xs="7">
 				<img
 					style={style.image}
-					className="rounded"
+					className="rounded img-fluid"
 					src={props.image}
-					alt={'Feature Image'}
+					alt={'Featured'}
 					>
 				</img>
 			</Col>
 			<Col className="text-left my-auto" xs="5">
-				<h3>{props.head}</h3>
-				<hr align="left" style={style.hr}/>
-				<p>{props.body}</p>
+				<div style={{width: '85%'}}>
+					<h3>{props.head}</h3>
+					<hr align="left" style={style.hr}/>
+					<p>{props.body}</p>
+				</div>
 			</Col>
 		</Row>
 	)

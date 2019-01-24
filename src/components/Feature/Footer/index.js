@@ -12,7 +12,7 @@ export default () => {
 		<section>
 			<Row className="mx-0">
 				<Col xs="12" className="text-center py-2 px-0" style={style.footer}>
-					&copy; Copyright 2018 &middot; Tabbr
+					Copyright &copy; 2018 &middot; Tabbr
 				</Col>
 			</Row>
 		</section>

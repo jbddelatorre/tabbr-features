@@ -1,5 +1,7 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap';
+import SectionHeader from '../../UI/SectionHeader';
+
 import ClientCarousel from './ClientCarousel'
 
 import CSB from '../../../images/clients/csb.jpg'
@@ -10,11 +12,9 @@ import XDC from '../../../images/clients/xdc.jpg'
 
 export default () => {
 	return (
-		<section>
+		<section className="pt-4">
+			<SectionHeader title={'Tabbr Partners'}/>
 			<Row>
-				<Col className="text-center description"xs="12">
-					Debate Tournaments
-				</Col>
 				<Col xs="12 py-4">
 					<ClientCarousel 
 						images={[

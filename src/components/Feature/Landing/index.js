@@ -3,9 +3,11 @@ import Radium from 'radium';
 import Background from '../../../images/bg.jpg'
 import { Row, Col, Button } from 'reactstrap';
 
+import MediaQuery from 'react-responsive';
+
 const style = {
 	background: {
-		height: '80vh',
+		height: '70vh',
 		maxWidth: '100vw',
 		backgroundColor:'gray',
 		backgroundImage: `url(${Background})`,
@@ -27,7 +29,7 @@ const style = {
 		alignItems: 'center',
 		width:'100%',
 		flexDirection:'column',
-		height:'80vh',
+		height:'60vh',
 		maxWidth:'100vw',
 		color:'white',
 		position:'absolute',
@@ -35,15 +37,28 @@ const style = {
 	},
 	image: {
 		lg: {
-			width:'450px'
+			width:'300px'
 		},
 		xs: {
 			width:'200px'
 		}
 	},
 	button: {
-		width:'250px',
-	}
+		minWidth:'250px',
+	},
+	h1: {
+		marginTop:'16px',
+		marginBottom: '0px',
+		textAlign:'center',
+		fontFamily: 'Roboto',
+		fontWeight: '500'
+	},
+	h5: {
+		textAlign:'center',
+		marginTop: '0px',
+		fontSize: '22px',
+		fontFamily: 'Roboto',
+	},
 }
 export default Radium((props) => {
 	return (
@@ -51,23 +66,26 @@ export default Radium((props) => {
 			<div style={style.blackBg}>
 			</div>
 			<div style={style.content}>
-				<Row style={{width:'100%'}}>
-					<Col lg="4">
-						
+				<Row style={{width:'100%'}} className="justify-content-center">
+
+					<Col xs={{size:12, order: 1}} style={{textAlign: 'center'}}>
+						<MediaQuery query="(min-device-width: 600px)">
+							<img className="img-fluid"src={require('../../../images/tabbr.png')} alt="Tabbr Logo" style={style.image.lg}></img>
+						</MediaQuery>
+						<MediaQuery query="(max-device-width: 600px)">
+							<img className="img-fluid"src={require('../../../images/tabbr.png')} alt="Tabbr Logo" style={style.image.xs}></img>
+						</MediaQuery>
 					</Col>
-					<Col xs="12" lg="3" className="pt-4">
+
+					<Col xs={{size:12, order: 2}} className="px-4 align-self-center">
 						<h1 style={style.h1}>Tabbr</h1>
-						<h5>A Debate Management and Analytics Software</h5>
-						<p>Some text to explain a bit</p>
-						<Row className="my-2 mx-4 pr-4">
-							<Button className="mr-2" size="lg" outline color="light" style={style.button}>Create an Account</Button>
+						<h5 style={style.h5}>A Debate Management and Analytics Software</h5>
+
+						<Row className="my-2 mx-4 justify-content-center">
+							<a href="https://www.tabbr.co" target="_blank" rel="noopener noreferrer"><Button className="mr-2 my-2" size="lg" outline color="light" style={style.button}>Create an Account</Button></a>
+							<a href="https://www.tabbr.co" target="_blank" rel="noopener noreferrer"><Button className="mr-2 my-2" size="lg" outline color="light" style={style.button}>Log In</Button></a>
 						</Row>
-						<Row className="my-2 mx-4 pr-4">
-							<Button className="mr-2" size="lg" outline color="light" style={style.button}>Log In</Button>
-						</Row>
-					</Col>
-					<Col xs="12"lg="5">
-						<img src={require('../../../images/tabbr.png')} alt="Tabbr Logo" style={style.image.lg}></img>
+
 					</Col>
 				</Row>
 			</div>

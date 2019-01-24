@@ -7,10 +7,7 @@ import {
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
+} from 'reactstrap';
 import '../../../animate/animate.css'
 
 const style = {
@@ -23,14 +20,16 @@ const style = {
     boxShadow: '0 2px 20px 0 #aaa'
   },
   textDefault: {
-    display:'none',
     opacity:'0',
-    zIndex:'999'
+    zIndex:'999',
+    height: '0px',
+    transition: 'opacity 1s, height 2s',
   },
   textScroll: {
     display:'block',
     opacity:'1',
-    zIndex:'999'
+    zIndex:'999',
+    transition: 'opacity 1s'
   },
   main: {
     color:'white',
@@ -91,7 +90,7 @@ export default class Example extends React.Component {
                 <NavItem>
                   <NavLink href="https://github.com/reactstrap/reactstrap" style={style.sub}>Login</NavLink>
                 </NavItem>
-                <UncontrolledDropdown nav inNavbar>
+                {/*<UncontrolledDropdown nav inNavbar>
                   <DropdownToggle nav caret style={style.sub}>
                     Options
                   </DropdownToggle>
@@ -107,7 +106,7 @@ export default class Example extends React.Component {
                       Reset
                     </DropdownItem>
                   </DropdownMenu>
-                </UncontrolledDropdown>
+                </UncontrolledDropdown>*/}
               </Nav>
             </Collapse>
         </Navbar>
