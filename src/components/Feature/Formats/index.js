@@ -6,7 +6,10 @@ const style={
 	p: {
 		marginTop: '16px',
 		marginBottom: '12px',
-		fontSize:'24px'
+		fontSize:'18px',
+		fontWeight:'600',
+		color:'#0A4778',
+		fontFamily:'Open Sans !important'
 	},
 	button: {
 		minWidth: '200px'
